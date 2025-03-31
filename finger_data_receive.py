@@ -240,14 +240,14 @@ class DataReceiver:
 if __name__ == "__main__":
     port = 'COM9'  # 替换为实际的串口端口
     receiver = DataReceiver(port)
-
+    # receiver.ser.write()
     # 服务器传送到设备的命令
-    # # 查询产品ID
-    # receiver.send_query(0xff, 0x01)
-    # # 查询版本信息
-    # receiver.send_query(0x51, 0x01)
-    # # 查询工作状态
-    # receiver.send_query(0x51, 0x02)
+    # 查询产品ID
+    receiver.send_query(0xff, 0x01)
+    # 查询版本信息
+    receiver.send_query(0x51, 0x01)
+    # 查询工作状态
+    receiver.send_query(0x51, 0x02)
     
     
     # 接受设备传送到服务的回答

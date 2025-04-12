@@ -4,6 +4,7 @@ import json
 from datetime import datetime
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
+from utils import crc8
 
 class DataReceiver:
     def __init__(self, port, baudrate=38400):
@@ -43,12 +44,15 @@ class DataReceiver:
         self.ax.set_ylim(0, 150) 
         plt.yticks([])
 
+
     # 暂时没啥用的计算校验和
     def calculate_crc8(self, data):
-        crc = 0
+        crc = 0x00
         for byte in data:
-            crc = self.crc_table[crc ^ byte]
+            crc = self.crc_table[(crc ^ byte) & 0xFF]
         return crc
+    
+
     # 暂时没啥用，因为计算校验和有问题
     def send_query(self, token, type_byte, content=b''):
         head = b'\xaa\x55'
@@ -56,6 +60,7 @@ class DataReceiver:
         packet = head + bytes([token]) + bytes([length]) + bytes([type_byte]) + content
         crc = self.calculate_crc8(packet)
         packet += bytes([crc])
+        # print(f'发送数据包：{packet}')
         self.ser.write(packet)
 
     def receive_and_parse(self):
@@ -73,13 +78,14 @@ class DataReceiver:
                         if index + total_length <= len(self.buffer):
                             # print("至少有一条完整数据")
                             packet = self.buffer[index:index + total_length]
+                            print(f'{packet},')
                             # print(f'该条完整数据为：{packet}')
                             token = packet[2]
                             type_byte = packet[4]
                             content = packet[5:-1]
                             received_crc = packet[-1]
                             calculated_crc = self.calculate_crc8(packet[:-1])
-                            print(f'接受校验和：{received_crc}\t计算校验和：{calculated_crc}')
+                            # print(f'接受校验和：{received_crc}\t计算校验和：{calculated_crc}')
                             # 注意这里校验和计算有问题 需要再看看
                             if True:#calculated_crc != received_crc:
                                 # print("接受校验和与计算校验和相等，该数据为一条完整数据")
@@ -152,19 +158,19 @@ class DataReceiver:
             json.dump(self.waveform_data, f, indent=4)
 
     def handle_product_id(self, content):
-        print('*********************查询产品ID***********************')
+        # print('*********************查询产品ID***********************')
         product_id = content.decode('ascii')
-        print(f"产品ID: {product_id}")
+        # print(f"产品ID: {product_id}")
 
     def handle_version_info(self, content):
-        print('*********************查询产品版本***********************')
+        # print('*********************查询产品版本***********************')
         software_version = content[0]
         hardware_version = content[1]
-        print(f"软件版本: Ver{software_version >> 4}.{software_version & 0xf}")
-        print(f"硬件版本: Ver{hardware_version >> 4}.{hardware_version & 0xf}")
+        # print(f"软件版本: Ver{software_version >> 4}.{software_version & 0xf}")
+        # print(f"硬件版本: Ver{hardware_version >> 4}.{hardware_version & 0xf}")
 
     def handle_working_status(self, content):
-        print('*********************查询工作状态***********************')
+        # print('*********************查询工作状态***********************')
         status_byte = content[0]
         mode = (status_byte >> 6) & 0x3
         mode_mapping = {0: "成人模式", 1: "新生儿模式", 2: "动物模式", 3: "预留"}
@@ -172,14 +178,14 @@ class DataReceiver:
         probe_status = (status_byte >> 4) & 0x1
         probe_off = (status_byte >> 3) & 0x1
         check_probe = (status_byte >> 2) & 0x1
-        print(f"工作模式: {mode_mapping[mode]}")
-        print(f"上行主动发送状态: {'允许' if sending_status else '禁止'}")
-        print(f"探头连接状态: {'未连接' if probe_status else '已连接'}")
-        print(f"探头脱落状态: {'是' if probe_off else '否'}")
-        print(f"检查探头状态: {'是' if check_probe else '否'}")
+        # print(f"工作模式: {mode_mapping[mode]}")
+        # print(f"上行主动发送状态: {'允许' if sending_status else '禁止'}")
+        # print(f"探头连接状态: {'未连接' if probe_status else '已连接'}")
+        # print(f"探头脱落状态: {'是' if probe_off else '否'}")
+        # print(f"检查探头状态: {'是' if check_probe else '否'}")
 
     def handle_parameter_data(self, content,timestamp):
-        print('*********************查询参数数据***********************')
+        # print('*********************查询参数数据***********************')
         spo2 = content[0]
         pr_low = content[1]
         pr_high = content[2]
@@ -194,16 +200,16 @@ class DataReceiver:
         low_perfusion = (status_byte >> 5) & 0x1
         mode = (status_byte >> 6) & 0x3
         mode_mapping = {0: "成人模式", 1: "新生儿模式", 2: "动物模式", 3: "预留"}
-        print(f"血氧饱和度(SpO2): {spo2}%")
-        print(f"脉率(PR): {pr} bpm")
-        print(f"灌注指数(PI): {pi / 1000}")
-        print(f"探头断开状态: {'是' if probe_disconnected else '否'}")
-        print(f"探头脱落状态: {'是' if probe_off else '否'}")
-        print(f"脉搏搜索状态: {'是' if pulse_searching else '否'}")
-        print(f"检查探头状态: {'是' if check_probe else '否'}")
-        print(f"运动检测状态: {'是' if motion_detected else '否'}")
-        print(f"低灌注状态: {'是' if low_perfusion else '否'}")
-        print(f"工作模式: {mode_mapping[mode]}")
+        # print(f"血氧饱和度(SpO2): {spo2}%")
+        # print(f"脉率(PR): {pr} bpm")
+        # print(f"灌注指数(PI): {pi / 1000}")
+        # print(f"探头断开状态: {'是' if probe_disconnected else '否'}")
+        # print(f"探头脱落状态: {'是' if probe_off else '否'}")
+        # print(f"脉搏搜索状态: {'是' if pulse_searching else '否'}")
+        # print(f"检查探头状态: {'是' if check_probe else '否'}")
+        # print(f"运动检测状态: {'是' if motion_detected else '否'}")
+        # print(f"低灌注状态: {'是' if low_perfusion else '否'}")
+        # print(f"工作模式: {mode_mapping[mode]}")
         parameter_data = {
             'spo2': spo2,
             'pr': pr,
@@ -214,14 +220,14 @@ class DataReceiver:
 
 
     def handle_waveform_data(self, type_byte, content,timestamp):
-        print('*********************查询波形数据***********************')
+        # print('*********************查询波形数据***********************')
         waveform_data = []
         if type_byte == 0x01:
             for i in range(0, len(content), 1):
                 pulse_flag = (content[i] >> 7) & 0x1
                 waveform_value = content[i] & 0x7f
                 waveform_data.append((pulse_flag, waveform_value))
-            print(f"归一化波形数据: {waveform_data}")
+            # print(f"归一化波形数据: {waveform_data}")
         
         elif type_byte == 0x02:
             ir_data = []
@@ -231,8 +237,8 @@ class DataReceiver:
                 red_sample = struct.unpack('<I', content[i + 4:i + 8])[0]
                 ir_data.append(ir_sample)
                 red_data.append(red_sample)
-            print(f"未归一化红外波形数据: {ir_data}")
-            print(f"未归一化红光波形数据: {red_data}")
+            # print(f"未归一化红外波形数据: {ir_data}")
+            # print(f"未归一化红光波形数据: {red_data}")
             waveform_data={'ir_data': ir_data, 'red_data': red_data}
         self.save_data(timestamp, 'waveform', waveform_data)
 
@@ -248,7 +254,10 @@ if __name__ == "__main__":
     receiver.send_query(0x51, 0x01)
     # 查询工作状态
     receiver.send_query(0x51, 0x02)
-    
+    # 设置成人模式
+    receiver.send_query(0x50,0x01,b'\x00')
+    # 设置主动上传归一化波形数据
+    receiver.send_query(0x50,0x02,b'\x01')
     
     # 接受设备传送到服务的回答
     try:

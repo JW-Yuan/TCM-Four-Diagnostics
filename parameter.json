@@ -1,1 +1,112 @@
-[]
+[
+    {
+        "timestamp": "2025-04-11 21:07:07.073540",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 0,
+            "pr": 0,
+            "pi": 0,
+            "status_byte": 4
+        }
+    },
+    {
+        "timestamp": "2025-04-11 21:07:08.114684",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 0,
+            "pr": 0,
+            "pi": 0,
+            "status_byte": 4
+        }
+    },
+    {
+        "timestamp": "2025-04-11 21:07:09.081391",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 0,
+            "pr": 0,
+            "pi": 0,
+            "status_byte": 4
+        }
+    },
+    {
+        "timestamp": "2025-04-11 21:07:10.085232",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 0,
+            "pr": 0,
+            "pi": 0,
+            "status_byte": 4
+        }
+    },
+    {
+        "timestamp": "2025-04-11 21:07:11.342761",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 0,
+            "pr": 0,
+            "pi": 0,
+            "status_byte": 4
+        }
+    },
+    {
+        "timestamp": "2025-04-11 21:07:12.209671",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 0,
+            "pr": 0,
+            "pi": 0,
+            "status_byte": 4
+        }
+    },
+    {
+        "timestamp": "2025-04-11 21:07:13.082852",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 0,
+            "pr": 0,
+            "pi": 0,
+            "status_byte": 4
+        }
+    },
+    {
+        "timestamp": "2025-04-11 21:07:14.103032",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 0,
+            "pr": 0,
+            "pi": 0,
+            "status_byte": 4
+        }
+    },
+    {
+        "timestamp": "2025-04-11 21:07:15.098184",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 0,
+            "pr": 0,
+            "pi": 0,
+            "status_byte": 4
+        }
+    },
+    {
+        "timestamp": "2025-04-11 21:07:16.097132",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 98,
+            "pr": 81,
+            "pi": 0,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-04-11 21:07:17.099460",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 98,
+            "pr": 77,
+            "pi": 0,
+            "status_byte": 0
+        }
+    }
+]

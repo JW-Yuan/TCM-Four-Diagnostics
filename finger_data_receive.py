@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
-from utils import crc8
+# from utils import crc8
 
 class DataReceiver:
     def __init__(self, port, baudrate=38400):
@@ -78,7 +78,7 @@ class DataReceiver:
                         if index + total_length <= len(self.buffer):
                             # print("至少有一条完整数据")
                             packet = self.buffer[index:index + total_length]
-                            print(f'{packet},')
+                            # print(f'{packet},')
                             # print(f'该条完整数据为：{packet}')
                             token = packet[2]
                             type_byte = packet[4]
@@ -200,16 +200,16 @@ class DataReceiver:
         low_perfusion = (status_byte >> 5) & 0x1
         mode = (status_byte >> 6) & 0x3
         mode_mapping = {0: "成人模式", 1: "新生儿模式", 2: "动物模式", 3: "预留"}
-        # print(f"血氧饱和度(SpO2): {spo2}%")
-        # print(f"脉率(PR): {pr} bpm")
-        # print(f"灌注指数(PI): {pi / 1000}")
-        # print(f"探头断开状态: {'是' if probe_disconnected else '否'}")
-        # print(f"探头脱落状态: {'是' if probe_off else '否'}")
-        # print(f"脉搏搜索状态: {'是' if pulse_searching else '否'}")
-        # print(f"检查探头状态: {'是' if check_probe else '否'}")
-        # print(f"运动检测状态: {'是' if motion_detected else '否'}")
-        # print(f"低灌注状态: {'是' if low_perfusion else '否'}")
-        # print(f"工作模式: {mode_mapping[mode]}")
+        print(f"血氧饱和度(SpO2): {spo2}%")
+        print(f"脉率(PR): {pr} bpm")
+        print(f"灌注指数(PI): {pi / 1000}")
+        print(f"探头断开状态: {'是' if probe_disconnected else '否'}")
+        print(f"探头脱落状态: {'是' if probe_off else '否'}")
+        print(f"脉搏搜索状态: {'是' if pulse_searching else '否'}")
+        print(f"检查探头状态: {'是' if check_probe else '否'}")
+        print(f"运动检测状态: {'是' if motion_detected else '否'}")
+        print(f"低灌注状态: {'是' if low_perfusion else '否'}")
+        print(f"工作模式: {mode_mapping[mode]}")
         parameter_data = {
             'spo2': spo2,
             'pr': pr,
@@ -227,7 +227,7 @@ class DataReceiver:
                 pulse_flag = (content[i] >> 7) & 0x1
                 waveform_value = content[i] & 0x7f
                 waveform_data.append((pulse_flag, waveform_value))
-            # print(f"归一化波形数据: {waveform_data}")
+            print(f"归一化波形数据: {waveform_data}")
         
         elif type_byte == 0x02:
             ir_data = []

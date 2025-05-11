@@ -1,42 +1,802 @@
 [
     {
-        "timestamp": "2025-04-17 16:58:57.774517",
+        "timestamp": "2025-05-05 15:45:11.711199",
         "data_type": "parameter",
         "data": {
-            "spo2": 0,
-            "pr": 0,
-            "pi": 0,
-            "status_byte": 4
+            "spo2": 97,
+            "pr": 79,
+            "pi": 8,
+            "status_byte": 0
         }
     },
     {
-        "timestamp": "2025-04-17 16:58:58.803603",
+        "timestamp": "2025-05-05 15:45:12.620172",
         "data_type": "parameter",
         "data": {
-            "spo2": 0,
-            "pr": 0,
-            "pi": 0,
-            "status_byte": 4
+            "spo2": 97,
+            "pr": 80,
+            "pi": 8,
+            "status_byte": 0
         }
     },
     {
-        "timestamp": "2025-04-17 16:58:59.794467",
+        "timestamp": "2025-05-05 15:45:13.631226",
         "data_type": "parameter",
         "data": {
-            "spo2": 0,
-            "pr": 0,
-            "pi": 0,
-            "status_byte": 4
+            "spo2": 97,
+            "pr": 80,
+            "pi": 8,
+            "status_byte": 0
         }
     },
     {
-        "timestamp": "2025-04-17 16:59:00.809988",
+        "timestamp": "2025-05-05 15:45:14.644809",
         "data_type": "parameter",
         "data": {
-            "spo2": 0,
-            "pr": 0,
-            "pi": 0,
-            "status_byte": 4
+            "spo2": 96,
+            "pr": 83,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:15.649192",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 85,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:16.636195",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 85,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:17.654662",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 86,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:18.637614",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 86,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:19.642036",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 88,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:20.659845",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 86,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:21.674812",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 86,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:22.683213",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 85,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:23.672215",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 84,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:24.672439",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 83,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:25.674539",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 83,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:26.687495",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 83,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:27.691764",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 83,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:28.680661",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 84,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:29.686116",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 82,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:30.695776",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 95,
+            "pr": 82,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:31.678235",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 95,
+            "pr": 82,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:32.717008",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 94,
+            "pr": 80,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:33.700235",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 94,
+            "pr": 80,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:34.690307",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 94,
+            "pr": 79,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:35.682765",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 94,
+            "pr": 81,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:36.685411",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 95,
+            "pr": 81,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:37.697211",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 83,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:38.727361",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 83,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:39.721677",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 86,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:40.713644",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 98,
+            "pr": 84,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:41.716462",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 82,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:42.727035",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 81,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:43.733815",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 80,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:44.744241",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 80,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:45.737656",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 79,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:46.739236",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 98,
+            "pr": 81,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:47.736257",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 98,
+            "pr": 82,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:48.737551",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 98,
+            "pr": 82,
+            "pi": 8,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:49.787252",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 98,
+            "pr": 84,
+            "pi": 9,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:50.769178",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 98,
+            "pr": 84,
+            "pi": 9,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:51.760563",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 98,
+            "pr": 84,
+            "pi": 9,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:52.755158",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 98,
+            "pr": 83,
+            "pi": 13,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:53.754406",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 98,
+            "pr": 81,
+            "pi": 13,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:54.774036",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 79,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:55.761939",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 79,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:56.751710",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 80,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:57.753125",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 80,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:58.763318",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 80,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:45:59.770178",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 82,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:00.762598",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 82,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:01.766018",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 82,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:02.766367",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 95,
+            "pr": 82,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:03.774468",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 95,
+            "pr": 83,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:04.758739",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 95,
+            "pr": 83,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:05.765497",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 95,
+            "pr": 83,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:06.784438",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 95,
+            "pr": 83,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:07.777231",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 95,
+            "pr": 83,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:08.783805",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 95,
+            "pr": 83,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:09.790234",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 84,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:10.774515",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 84,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:11.778560",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 83,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:12.811527",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 83,
+            "pi": 9,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:13.793664",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 84,
+            "pi": 9,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:14.800289",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 98,
+            "pr": 84,
+            "pi": 9,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:15.789092",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 82,
+            "pi": 9,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:16.791984",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 83,
+            "pi": 9,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:17.805932",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 83,
+            "pi": 9,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:18.796028",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 83,
+            "pi": 9,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:19.809563",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 81,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:20.794754",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 81,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:21.802357",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 82,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:22.807694",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 82,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:23.826506",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 82,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:24.821025",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 97,
+            "pr": 82,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:25.826133",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 83,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:27.240521",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 84,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:27.816355",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 82,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:28.820229",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 82,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:29.825806",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 82,
+            "pi": 11,
+            "status_byte": 0
+        }
+    },
+    {
+        "timestamp": "2025-05-05 15:46:30.824784",
+        "data_type": "parameter",
+        "data": {
+            "spo2": 96,
+            "pr": 81,
+            "pi": 11,
+            "status_byte": 0
         }
     }
 ]
